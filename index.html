@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Choissisez votre manière de soutenir Stardust</title>
-
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700' rel="stylesheet">
-  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-</head>
-
-<body>
-  <div id="app" style="display:none">
-    <v-app>
-      <v-scale-transition mode="out-in" :key="show">
-        <div v-if="show">
-          <v-content>
-            <div class="tips-title-container">
-              <div>
-                <img class="tips-logo" src="https://yt3.ggpht.com/-nGdX4uMZlsE/AAAAAAAAAAI/AAAAAAAAAAA/l41G-tGJSms/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
-                <h1 class="heading tips-title">De quel manière veux-tu me soutenir ?</h1>
-              </div>
-            </div>
-            <div class="tips-mosaic-container">
-              <v-container fluid style="min-height: 0;" grid-list-lg>
-                <v-layout row wrap>
-                  <v-flex xs12 md6>
-                    <div v-on:click="goTo('https://utip.io/stardust')">
-                      <v-card color="cyan darken-2" class="white--text" ripple>
-
-                        <v-card-media class="white--text" height="200px" width="80px" src="https://www.utip.io/bundles/utipbackoffice/images/website/utiplogoclair.png?v127">
-                        </v-card-media>
-                        <v-card-actions style="justify-content: end;">
-                          <v-btn flat color="white">J'y go!</v-btn>
-                        </v-card-actions>
-                      </v-card>
+    <head>
+        <meta charset="utf-8">
+            <meta content="ie=edge" http-equiv="X-UA-Compatible">
+                <title>
+                    Choissisez votre manière de soutenir Stardust
+                </title>
+                <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
+                        <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+                            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport">
+                            </meta>
+                        </link>
+                    </link>
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div id="app" style="display:none">
+            <v-app>
+                <v-scale-transition :key="show" mode="out-in">
+                    <div v-if="show">
+                        <v-content>
+                            <div class="tips-title-container">
+                                <div>
+                                    <img class="tips-logo" src="https://yt3.ggpht.com/-nGdX4uMZlsE/AAAAAAAAAAI/AAAAAAAAAAA/l41G-tGJSms/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
+                                        <h1 class="heading tips-title">
+                                            De quel manière veux-tu me soutenir ?
+                                        </h1>
+                                    </img>
+                                </div>
+                            </div>
+                            <div class="tips-mosaic-container">
+                                <v-container fluid="" grid-list-lg="" style="min-height: 0;">
+                                    <v-layout row="" wrap="">
+                                        <v-flex md6="" xs12="">
+                                            <div v-on:click="goTo('https://utip.io/stardust')">
+                                                <v-card class="white--text" color="cyan darken-2" ripple="">
+                                                    <v-card-media class="white--text" height="200px" src="https://www.utip.io/bundles/utipbackoffice/images/website/utiplogoclair.png?v127" width="80px">
+                                                    </v-card-media>
+                                                    <v-card-title primary-title="">
+                                                        <div>
+                                                            <div class="headline">
+                                                                Utip
+                                                            </div>
+                                                            <span class="white--text">
+                                                                Pour un don sans argent
+                                                            </span>
+                                                        </div>
+                                                    </v-card-title>
+                                                    <v-card-actions style="justify-content: end;">
+                                                        <v-btn color="white" flat="">
+                                                            J'y go!
+                                                        </v-btn>
+                                                    </v-card-actions>
+                                                </v-card>
+                                            </div>
+                                        </v-flex>
+                                        <v-flex md6="" xs12="">
+                                            <div v-on:click="goTo('https://www.tipeee.com/stardust')">
+                                                <v-card class="white--text" ripple="" style="background-color:#D84759">
+                                                    <v-card-media class="white--text" height="200px" src="https://files.lefuturiste.fr/direct/0263A13C1D5ED08A7706.png" width="80px">
+                                                    </v-card-media>
+                                                    <v-card-title primary-title="">
+                                                        <div>
+                                                            <div class="headline">
+                                                                Tipeee
+                                                            </div>
+                                                            <span class="white--text">
+                                                                Pour un petit pourboire
+                                                            </span>
+                                                        </div>
+                                                    </v-card-title>
+                                                    <v-card-actions style="justify-content: end;">
+                                                        <v-btn color="white" flat="">
+                                                            J'y go!
+                                                        </v-btn>
+                                                    </v-card-actions>
+                                                </v-card>
+                                            </div>
+                                        </v-flex>
+                                        <v-layout justify-center="">
+                                            <v-flex md6="" xs12="">
+                                                <div v-on:click="goTo('https://www.redbubble.com/fr/people/StardustYT/shop?asc=u')">
+                                                    <v-card class="white--text" ripple="" style="background-color:#c0392b">
+                                                        <v-card-media class="white--text" height="200px" src="https://files.lefuturiste.fr/direct/31BD9FFDD8816C911552.png" width="80px">
+                                                        </v-card-media>
+                                                        <v-card-title primary-title="">
+                                                            <div>
+                                                                <div class="headline">
+                                                                    RedBubble
+                                                                </div>
+                                                                <span class="white--text">
+                                                                    Pour ma boutique!
+                                                                </span>
+                                                            </div>
+                                                        </v-card-title>
+                                                        <v-card-actions style="justify-content: end;">
+                                                            <v-btn color="white" flat="">
+                                                                J'y go!
+                                                            </v-btn>
+                                                        </v-card-actions>
+                                                    </v-card>
+                                                </div>
+                                            </v-flex>
+                                        </v-layout>
+                                    </v-layout>
+                                </v-container>
+                                <v-content class="stay-connected-cover">
+                                    <v-container fill-height="" fluid="">
+                                        <v-layout align-center="" justify-center="">
+                                            <div class="stay-connected-cover-content">
+                                                <h2 class="stay-connected">
+                                                    Restez connecté!
+                                                </h2>
+                                                <div class="social-icons">
+                                                    <a href="https://www.youtube.com/channel/UCdL3UpiseRlvxXuORJjmqZw">
+                                                        <v-icon>
+                                                            fab fa-youtube
+                                                        </v-icon>
+                                                    </a>
+                                                    <a href="https://twitter.com/AstroVicnet">
+                                                        <v-icon>
+                                                            fab fa-twitter
+                                                        </v-icon>
+                                                    </a>
+                                                    <a href="https://discord.gg/VEkWGyH">
+                                                        <v-icon>
+                                                            fab fa-discord
+                                                        </v-icon>
+                                                    </a>
+                                                    <a href="https://www.facebook.com/StardustYoutube/">
+                                                        <v-icon>
+                                                            fab fa-facebook
+                                                        </v-icon>
+                                                    </a>
+                                                    <a href="https://stardustlesite.com">
+                                                        <v-icon>
+                                                            fas fa-globe
+                                                        </v-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </v-layout>
+                                    </v-container>
+                                </v-content>
+                            </div>
+                        </v-content>
                     </div>
-                  </v-flex>
-                  <v-flex xs12 md6>
-                    <div v-on:click="goTo('https://www.tipeee.com/stardust')">
-                      <v-card style="background-color:#D84759" class="white--text" ripple>
-                        <v-card-media class="white--text" height="200px" width="80px" src="https://files.lefuturiste.fr/direct/0263A13C1D5ED08A7706.png">
-                        </v-card-media>
-                        <v-card-actions style="justify-content: end;">
-                          <v-btn flat color="white">J'y go!</v-btn>
-                        </v-card-actions>
-                      </v-card>
-                    </div>
-                  </v-flex>
-                  <v-layout justify-center>
-                    <v-flex xs12 md6>
-                      <div v-on:click="goTo('https://www.redbubble.com/fr/people/StardustYT/shop?asc=u')">
-                        <v-card style="background-color:#c0392b" class="white--text" ripple>
-                          <v-card-media class="white--text" height="200px" width="80px" src="https://files.lefuturiste.fr/direct/31BD9FFDD8816C911552.png">
-                          </v-card-media>
-                          <v-card-actions style="justify-content: end;">
-                            <v-btn flat color="white">J'y go!</v-btn>
-                          </v-card-actions>
-                        </v-card>
-                      </div>
-                    </v-flex>
-                  </v-layout>
-                </v-layout>
-              </v-container>
-              <v-content class="stay-connected-cover">
-                <v-container fluid fill-height>
-                  <v-layout justify-center align-center>
-                    <div class="stay-connected-cover-content">
-                      <h2 class="stay-connected">Restez connecté!</h2>
-                      <div class="social-icons">
-                        <a href="https://www.youtube.com/channel/UCdL3UpiseRlvxXuORJjmqZw">
-                          <v-icon>fab fa-youtube</v-icon>
-                        </a>
-                        <a href="https://twitter.com/AstroVicnet">
-                          <v-icon>fab fa-twitter</v-icon>
-                        </a>
-                        <a href="https://discord.gg/VEkWGyH">
-                          <v-icon>fab fa-discord</v-icon>
-                        </a>
-                        <a href="https://www.facebook.com/StardustYoutube/">
-                          <v-icon>fab fa-facebook</v-icon>
-                        </a>
-                        <a href="https://stardustlesite.com">
-                          <v-icon>fas fa-globe</v-icon>
-                        </a>
-                      </div>
-                    </div>
-                  </v-layout>
-                </v-container>
-              </v-content>
-            </div>
-          </v-content>
+                </v-scale-transition>
+            </v-app>
         </div>
-      </v-scale-transition>
-    </v-app>
-  </div>
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
-  <script>
-    new Vue({
+        <script src="https://unpkg.com/vue/dist/vue.js">
+        </script>
+        <script src="https://unpkg.com/vuetify/dist/vuetify.js">
+        </script>
+        <script>
+            new Vue({
       el: '#app',
       data: {
         show: false
@@ -117,9 +173,9 @@
         }
       }
     })
-  </script>
-  <style>
-    #app {
+        </script>
+        <style>
+            #app {
       display: block !important;
     }
 
@@ -149,6 +205,10 @@
       width: 50%;
       margin: 0 auto;
     }
+   .tips-mosaic-container .card__title--primary {
+    margin-top: -1em;
+    margin-bottom: -2em;
+}
 
     .stay-connected-cover {
       border-radius: 10px;
@@ -229,7 +289,6 @@
         margin-top: 4em;
       }
     }
-  </style>
-</body>
-
+        </style>
+    </body>
 </html>
