@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Choissisez votre manière de soutenir Stardust</title>
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <div id="app" style="display:none">
+    <v-app>
+      <v-scale-transition mode="out-in" :key="show">
+        <div v-if="show">
+          <v-content>
+            <div class="tips-title-container">
+              <div>
+                <img class="tips-logo" src="https://yt3.ggpht.com/-nGdX4uMZlsE/AAAAAAAAAAI/AAAAAAAAAAA/l41G-tGJSms/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
+                <h1 class="heading tips-title">De quel manière veux-tu me soutenir ?</h1>
+              </div>
+            </div>
+            <div class="tips-mosaic-container">
+              <v-container fluid style="min-height: 0;" grid-list-lg>
+                <v-layout row wrap>
+                  <v-flex xs12 md6>
+                    <div v-on:click="goTo('https://utip.io/stardust')">
+                      <v-card color="cyan darken-2" class="white--text" ripple>
+
+                        <v-card-media class="white--text" height="200px" width="80px" src="https://www.utip.io/bundles/utipbackoffice/images/website/utiplogoclair.png?v127">
+                        </v-card-media>
+                        <v-card-actions style="justify-content: end;">
+                          <v-btn flat color="white">J'y go!</v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </div>
+                  </v-flex>
+                  <v-flex xs12 md6>
+                    <div v-on:click="goTo('https://www.tipeee.com/stardust')">
+                      <v-card style="background-color:#D84759" class="white--text" ripple>
+                        <v-card-media class="white--text" height="200px" width="80px" src="https://files.lefuturiste.fr/direct/0263A13C1D5ED08A7706.png">
+                        </v-card-media>
+                        <v-card-actions style="justify-content: end;">
+                          <v-btn flat color="white">J'y go!</v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </div>
+                  </v-flex>
+                  <v-layout justify-center>
+                  <v-flex xs12 md6>
+                    <div v-on:click="goTo('https://www.redbubble.com/fr/people/StardustYT/shop?asc=u')">
+                        <v-card style="background-color:#c0392b" class="white--text" ripple>
+                        <v-card-media class="white--text" height="200px" width="80px" src="https://files.lefuturiste.fr/direct/31BD9FFDD8816C911552.png">
+                        </v-card-media>
+                        <v-card-actions style="justify-content: end;">
+                          <v-btn flat color="white">J'y go!</v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </div>
+                  </v-flex>
+                </v-layout>
+                </v-layout>
+              </v-container>
+              <v-content class="stay-connected-cover">
+                <v-container fluid fill-height>
+                  <v-layout justify-center align-center>
+                    <div class="stay-connected-cover-content">
+                      <h2 class="stay-connected">Restez connecté!</h2>
+                      <div class="social-icons">
+                        <a href="https://www.youtube.com/channel/UCdL3UpiseRlvxXuORJjmqZw">
+                          <v-icon>fab fa-youtube</v-icon>
+                        </a>
+                        <a href="https://twitter.com/AstroVicnet">
+                          <v-icon>fab fa-twitter</v-icon>
+                        </a>
+                        <a href="https://discord.gg/VEkWGyH">
+                          <v-icon>fab fa-discord</v-icon>
+                        </a>
+                        <a href="https://www.facebook.com/StardustYoutube/">
+                          <v-icon>fab fa-facebook</v-icon>
+                        </a>
+                        <a href="https://stardustlesite.com">
+                          <v-icon>fas fa-globe</v-icon>
+                        </a>
+                      </div>
+                    </div>
+                  </v-layout>
+                </v-container>
+              </v-content>
+            </div>
+          </v-content>
+        </div>
+      </v-scale-transition>
+    </v-app>
+  </div>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        show: false
+      },
+      mounted() {
+        setTimeout(() => {
+          this.show = true
+        }, 200)
+      },
+      methods: {
+        goTo: function(link) {
+          window.location = link
+        }
+      }
+    })
+  </script>
+  <style>
+    #app {
+      display: block !important;
+    }
+    .tips-logo {
+      width: 10em;
+      border-radius: 50%;
+      margin-bottom: 2.2em;
+    }
+
+    .tips-title-container {
+      background-image: linear-gradient(to top, #2980b9, #008bb7, #0094ac, #009b9b, #16a085);
+      padding-top: 3em;
+      padding-bottom: 5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .tips-title {
+      color: white;
+    }
+
+    .tips-mosaic-container {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .stay-connected-cover {
+      border-radius: 10px;
+      margin-top: 5em;
+      margin-bottom: 5em;
+      height: 20vh;
+      text-align: center;
+    }
+
+    .stay-connected-cover-content {
+      padding-bottom: 3em;
+      width: 100%;
+      border-radius: 10px;
+
+    }
+
+    .main-cover {
+      height: 100vh;
+    }
+
+    .main-cover .very-big-title {
+      font-size: 800%;
+      color: white;
+    }
+
+    .main-cover .content {
+      height: 100%;
+    }
+
+    .main-cover .content[data-booted="true"] {
+      transition: 2s cubic-bezier(.4, 0, .2, 1) !important;
+    }
+
+    .stay-connected-cover,
+    .stay-connected-cover .icon {
+      color: #2c3e50;
+    }
+
+    .stay-connected-cover .social-icons .icon {
+      font-size: 4.5em;
+    }
+
+    .social-icons {
+      flex-wrap: wrap;
+      margin-top: 5em;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a {
+      color: #2f2f2f;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .social-icons a:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    body,
+    * {
+      font-family: 'IBM Plex Sans', sans-serif
+    }
+
+    @media (max-width: 1200px) {
+      .tips-mosaic-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</body>
+
+</html>
