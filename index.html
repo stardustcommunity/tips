@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
-            <meta content="ie=edge" http-equiv="X-UA-Compatible">
-                <title>
-                    Choissisez votre manière de soutenir Stardust
-                </title>
-                <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet">
-                    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
-                        <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
-                            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport">
-                            </meta>
-                        </link>
-                    </link>
-                </link>
-            </meta>
-        </meta>
+        <meta charset="utf-8"/>
+        <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+        <title>
+            Choissisez votre manière de soutenir Stardust
+        </title>
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet"/>
+        <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet"/>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <div id="app" style="display:none">
@@ -36,6 +35,29 @@
                                 <v-container fluid="" grid-list-lg="" style="min-height: 0;">
                                     <v-layout row="" wrap="">
                                         <v-flex md6="" xs12="">
+                                            <div v-on:click="goTo('https://www.paypal.com/donate/?token=-wcwyI3Jx0VRaoMO10oXqLi0S8bdTjr15sqpWx582fYYZpDyyj49bQRO5cSW5mRDESHs30&country.x=ZA&locale.x=ZA')">
+                                                <v-card class="white--text" ripple="" style="background-color:#ecf0f1">
+                                                    <v-card-media class="white--text" height="200px" src="https://files.lefuturiste.fr/direct/62328D3451F2AAF2F6EE.png" width="80px">
+                                                    </v-card-media>
+                                                    <v-card-title primary-title="">
+                                                        <div>
+                                                            <div class="headline" style="color:#2c3e50">
+                                                                Paypal
+                                                            </div>
+                                                            <span style="color:#2c3e50">
+                                                                Faire un don direct!
+                                                            </span>
+                                                        </div>
+                                                    </v-card-title>
+                                                    <v-card-actions style="justify-content: end;">
+                                                        <v-btn flat="" style="color:#2c3e50">
+                                                            J'y go!
+                                                        </v-btn>
+                                                    </v-card-actions>
+                                                </v-card>
+                                            </div>
+                                        </v-flex>
+                                        <!--<v-flex md6="" xs12="">
                                             <div v-on:click="goTo('https://utip.io/stardust')">
                                                 <v-card class="white--text" color="cyan darken-2" ripple="">
                                                     <v-card-media class="white--text" height="200px" src="https://www.utip.io/bundles/utipbackoffice/images/website/utiplogoclair.png?v127" width="80px">
@@ -57,7 +79,7 @@
                                                     </v-card-actions>
                                                 </v-card>
                                             </div>
-                                        </v-flex>
+                                        </v-flex>-->
                                         <v-flex md6="" xs12="">
                                             <div v-on:click="goTo('https://www.tipeee.com/stardust')">
                                                 <v-card class="white--text" ripple="" style="background-color:#D84759">
@@ -127,31 +149,6 @@
                                                 </v-card>
                                             </div>
                                         </v-flex>
-                                        <v-layout justify-center>
-                                          <v-flex md6="" xs12="">
-                                              <div v-on:click="goTo('https://www.paypal.com/donate/?token=-wcwyI3Jx0VRaoMO10oXqLi0S8bdTjr15sqpWx582fYYZpDyyj49bQRO5cSW5mRDESHs30&country.x=ZA&locale.x=ZA')">
-                                                  <v-card class="white--text" ripple="" style="background-color:#ecf0f1">
-                                                      <v-card-media class="white--text" height="200px" src="https://files.lefuturiste.fr/direct/62328D3451F2AAF2F6EE.png" width="80px">
-                                                      </v-card-media>
-                                                      <v-card-title primary-title="">
-                                                          <div>
-                                                              <div class="headline"  style="color:#2c3e50">
-                                                                  Paypal
-                                                              </div>
-                                                              <span style="color:#2c3e50">
-                                                                  Faire un don direct!
-                                                              </span>
-                                                          </div>
-                                                      </v-card-title>
-                                                      <v-card-actions style="justify-content: end;">
-                                                          <v-btn style="color:#2c3e50" flat="">
-                                                              J'y go!
-                                                          </v-btn>
-                                                      </v-card-actions>
-                                                  </v-card>
-                                              </div>
-                                          </v-flex>
-                                        </v-layout>
                                     </v-layout>
                                 </v-container>
                                 <v-content class="stay-connected-cover">
